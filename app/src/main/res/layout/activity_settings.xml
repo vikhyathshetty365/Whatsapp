@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:maxWidth="4dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp" />
+
+
+    <EditText
+        android:id="@+id/user"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="243dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp"
+        android:width="4dp"
+        android:background="@drawable/input"
+        android:drawableStart="@drawable/edit_profile"
+        android:hint="@string/username"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/status"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="184dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp"
+        android:width="4dp"
+        android:background="@drawable/input"
+        android:drawableStart="@drawable/edit_profile"
+       android:hint="i am available"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/update"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="122dp"
+        android:background="@drawable/button"
+
+        android:text="@string/update"
+        android:layout_marginRight="17dp"
+        android:layout_marginLeft="17dp"
+        android:padding="4dp"
+        />
+
+</RelativeLayout>
